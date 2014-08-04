@@ -133,12 +133,11 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
+
 	margin-top: -10px;
 	padding-top:20px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+
 	min-height: 500px;
 	width: 100%;
 	
@@ -153,12 +152,26 @@ a:after {
     background-size: cover;
 }
 
+#superWrap{
+    position: absolute;
+    width: 100%;
+    min-height: 500px;
+    margin-top: -10px;
+    padding-top: 20px;
+}
+
+#megaWrap{
+    height: 100%;
+    width: 100%;
+}
+
 #headerwrap h1 {
 	margin-top: 100px;
 	color: white;
 	font-size: 70px;
 	font-weight: 300;
 	letter-spacing: 3px;
+    z-index: 999;
 }
 
 #headerwrap h2 {
@@ -167,6 +180,7 @@ a:after {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+     z-index: 999;
 }
 
 /* Dark Grey Wrap */
