@@ -172,6 +172,10 @@ a:after {
 	font-weight: 300;
 	letter-spacing: 3px;
     z-index: 999;
+    animation: fadeInDown 2s;
+    -moz-animation: fadeInDown 2s; /* Firefox */
+    -webkit-animation: fadeInDown 2s; /* Safari and Chrome */
+    -o-animation: fadeInDown 2s; /* Opera */
 }
 
 #headerwrap h2 {
@@ -181,6 +185,10 @@ a:after {
 	letter-spacing: 2px;
 	text-transform: uppercase;
      z-index: 999;
+    animation: fadeInDown 2.5s;
+    -moz-animation: fadeInDown 2.5s; /* Firefox */
+    -webkit-animation: fadeInDown 2.5s; /* Safari and Chrome */
+    -o-animation: fadeInDown 2.5s; /* Opera */
 }
 
 /* Dark Grey Wrap */
@@ -424,4 +432,38 @@ a:after {
 }
 
 
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
 

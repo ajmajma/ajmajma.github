@@ -65,19 +65,19 @@
 	<div class="container w">
 		<div class="row centered">
 			<br><br>
-			<div class="col-lg-4">
+			<div class="col-lg-4 slideMe">
 				<i class="fa fa-desktop"></i>
 				<h4>WEB DESIGN</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 slideMe">
 				<i class="fa fa-cogs"></i>
 				<h4>WEB DEVELOPMENT</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 slideMe">
 				<i class="fa fa-eye"></i>
 				<h4>SEO SERVICES</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
@@ -86,19 +86,19 @@
 		<br>
 		<div class="row centered">
 			<br><br>
-			<div class="col-lg-4">
+			<div class="col-lg-4 slideMe">
 				<i class="fa fa-heart"></i>
 				<h4>SOCIAL MEDIA</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 slideMe">
 				<i class="fa fa-shopping-cart"></i>
 				<h4>E-COMMERCE</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 slideMe">
 				<i class="fa fa-cloud"></i>
 				<h4>CLOUD SERVICES</h4>
 				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
@@ -165,5 +165,59 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+     <script>
+    (function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".slideMe");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+</script>
+
   </body>
 </html>
