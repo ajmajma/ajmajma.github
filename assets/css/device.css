@@ -184,6 +184,14 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 /* -- iPad Screen Vertical -- */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 
+#headerwrap h1 {
+	font-size: 60px;
+}
+
+#headerwrap h2 {
+	font-size: 30px;
+}
+
 /* iPad */
 #device	{
 	margin: 75px auto 0;
@@ -242,6 +250,14 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 @media only screen and (max-width: 479px) {
+
+#headerwrap h1 {
+	font-size: 45px;
+}
+
+#headerwrap h2 {
+	font-size: 30px;
+}
 
 /* iPhone */
 #device	{
