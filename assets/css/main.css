@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     line-height: 28px;
     margin-bottom: 25px;
+    font-size: 14px;
 }
 
 .centered {
@@ -218,13 +219,16 @@ a:after {
 
 /* Red Wrap */
 #r {
-	background: #E4E4E4;
+	background-color: #79a596;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #79a596), color-stop(100%, #79a596));
+    background-image: -webkit-linear-gradient(#79a596, #79a596);
+    background-image: linear-gradient(#79a596, #79a596);
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
 
 #r h4 {
-	color: #66BEA2;
+	color: #fff;
 	font-weight: 700;
 }
 
@@ -431,7 +435,6 @@ a:after {
     background: #66BEA2;
 }
 
-
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -461,9 +464,3 @@ a:after {
     transform: none;
   }
 }
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
