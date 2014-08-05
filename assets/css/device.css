@@ -252,7 +252,7 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 @media only screen and (max-width: 479px) {
 
 #headerwrap h1 {
-	font-size: 45px;
+	font-size: 40px;
 }
 
 #headerwrap h2 {
