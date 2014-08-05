@@ -155,7 +155,7 @@ a:after {
 #superWrap{
     position: absolute;
     width: 100%;
-    min-height: 500px;
+    height: 500px;
     margin-top: -10px;
     padding-top: 20px;
 }
