@@ -493,6 +493,7 @@ a:after {
     color: #66BEA2; 
     font-size: 22px;
     letter-spacing: 1px;
+    padding-left: 4px;
 }
 
 .hamburg {
@@ -543,12 +544,12 @@ a:after {
 .shader-bg {
   transition: 1s all;
     opacity: 0;
-    width: 263px;
-    height: 365px;
+    width: 200px;
+    height: 100%;
     position: fixed;
     top: 0px;
     right: 0px;
-     background: url(../img/bg.png) no-repeat right center;
+     background-color: #2d2d2d;
      z-index: 1;
   }
 .showFade{
