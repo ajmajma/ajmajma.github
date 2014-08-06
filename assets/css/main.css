@@ -540,6 +540,23 @@ a:after {
     margin-right: 30px;
 }
 
+.shader-bg {
+  transition: 1s all;
+    opacity: 0;
+    width: 263px;
+    height: 365px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+     background: url(../img/bg.png) no-repeat right center;
+     z-index: 1;
+  }
+.showFade{
+  opacity: 0.9;
+
+
+}
+
 svg {
   width: 110px;
   z-index: 999;

@@ -16,10 +16,13 @@ $('.hamburg').on('click touchend', function(e) {
   if($(this).hasClass("cross")){
  $(this).removeClass ("cross");
     $(".mobile-nav-ul").slideUp();
+    $(".shader-bg").removeClass("showFade");
+
 
   }else{
     $(this).addClass("cross");
     $(".mobile-nav-ul").slideDown();
+    $(".shader-bg").addClass("showFade");
   }
   
 
