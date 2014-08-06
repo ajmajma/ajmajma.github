@@ -464,3 +464,118 @@ a:after {
     transform: none;
   }
 }
+
+.mobile-nav-top {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 999;
+}
+
+.mobile-nav-header {
+    height: 72px;
+    width: 100%;
+     background-color: #2d2d2d;
+
+}
+.mobile-nav-header a {
+    color: #999999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-top: 26px;
+}
+
+.mobile-nav-header i {
+    color: #66BEA2; 
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.hamburg {
+    float: right;
+    height:  70px;
+    z-index: 999;
+
+}
+
+
+.removeBg {
+    transition: all 1s;
+    background: none;
+
+}
+
+
+.mobile-nav-ul {
+    list-style-type: none;
+    margin: 7.5px -15px;    
+    padding-left: 0;
+    text-align: right;
+   }
+
+.mobile-nav-ul li {
+    position: relative;
+    display: block;
+}
+
+.mobile-nav-ul li a {
+    transition: 0.5s all;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    color: #999999;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.mobile-nav-ul li a:hover {
+    color: #66BEA2;
+    margin-right: 30px;
+}
+
+svg {
+  width: 110px;
+  z-index: 999;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+path {
+  fill: none;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-width: 20px;
+  stroke-linecap: round;
+  stroke: #66BEA2;
+  stroke-dashoffset: 0px;
+}
+path#top,
+path#bottom {
+  stroke-dasharray: 240px 950px;
+}
+path#middle {
+  stroke-dasharray: 240px 240px;
+}
+.cross path#top,
+.cross path#bottom {
+  stroke-dashoffset: -650px;
+  stroke-dashoffset: -650px;
+}
+.cross path#middle {
+  stroke-dashoffset: -115px;
+  stroke-dasharray: 1px 220px;
+}
