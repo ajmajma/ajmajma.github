@@ -494,6 +494,7 @@
 },false); 
 
 $('.hamburg').on('click touchend', function(e) {
+  e.stopImmediatePropagation();
   if($(this).hasClass("cross")){
  $(this).removeClass ("cross");
     $(".mobile-nav-ul").slideUp();
