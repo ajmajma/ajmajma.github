@@ -133,8 +133,13 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 	padding: 35px 0 0 0;
 }
 
+.mobile-nav-top{
+	display: none;
+}
+
 /* -- Wide Screen -- */
 @media only screen and (min-width: 1400px){
+
 
 /* Thunderbolt */
 #device	{
@@ -187,12 +192,17 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 	padding: 65px 0 0 0;
 }
 
-
+.mobile-nav-top{
+	display: none;
+}
 } /* -- End Wide -- */
 
 /* -- iPad Screen Vertical -- */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 
+.mobile-nav-top{
+	display: block;
+}
 .navbar-fixed-top {
 	display: none;
 
@@ -264,6 +274,9 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 @media only screen and (max-width: 479px) {
+	.mobile-nav-top{
+	display: block;
+}
 
 .navbar-fixed-top {
 	display: none;

@@ -81,7 +81,15 @@ a:after {
     margin: 1em 0;
     padding: 0;
 }
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
 
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #cecece;
+
+}
 
 .navbar {
 	font-weight: 800;
@@ -93,6 +101,7 @@ a:after {
 .navbar-inverse {
 	background: #2d2d2d;
 	border-color: #2d2d2d;
+  transition: .5s all;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -157,9 +166,8 @@ a:after {
 #superWrap{
     position: absolute;
     width: 100%;
-    height: 500px;
-    margin-top: -10px;
-    padding-top: 20px;
+    height: 575px;
+   top: 0;
 }
 
 #megaWrap{
@@ -599,3 +607,22 @@ path#middle {
   stroke-dashoffset: -115px;
   stroke-dasharray: 1px 220px;
 }
+
+.makeSolid {
+  background-color: rgba(45,45,45,  1);
+    border: none;
+
+}
+
+.makeHalf { 
+  background-color: rgba(45,45,45,  .4);
+    border: none;
+
+}
+
+.makeNone {
+  background-color: rgba(255,255,255,  .15);
+  border: none;
+
+}
+
