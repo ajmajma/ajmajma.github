@@ -140,6 +140,14 @@
 				<p>By being true to the brand I represent, I elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And I see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
 			<p><br/><br/></p>
 			</div>
+
+				<div class="col-lg-8 col-lg-offset-2 heightMe">
+				<h4>DESIGN THAT IS FOCUSED ON YOU</h4>
+				<p>I take the time to make sure the design fits the message you or your company wants to send.</p>
+
+	
+			<p><br/><br/></p>
+			</div>
 			<div class="col-lg-2"></div>
 			<div class="col-lg-10 col-lg-offset-1">
 				
@@ -223,6 +231,24 @@ window.addEventListener("scroll", function() {
 
     }
 },false); 
+
+
+  	</script>
+  	<script>
+$(document).on('mousemove', function(e) {
+    var x = e.pageX;
+    var y = e.pageY;
+    var w = $(this).width();
+    var h = $(this).height();
+    var angle = Math.atan2(y-(h/2), x-(w/2)) * (180/Math.PI);
+    var rotate = angle + (180-45);
+    $('.focusYou .compass')
+        .css('-webkit-transform', 'rotate('+rotate+'deg)')
+        .css('-moz-transform', 'rotate('+rotate+'deg)')
+        .css('-ms-transform', 'rotate('+rotate+'deg)')
+        .css('-o-transform', 'rotate('+rotate+'deg)')
+        .css('transform', 'rotate('+rotate+'deg)');
+});
 
   	</script>
 
