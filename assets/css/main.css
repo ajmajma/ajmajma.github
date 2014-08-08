@@ -668,158 +668,6 @@ path#middle {
   height: 450px;
 }
 
-.containerHex {
-  position: relative;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  height: 500px;
-  -webkit-perspective: 700px;
-  z-index: 10;
-}
-.container .honeycomb {
-  display: block;
-  margin: 0 0 0 -490px;
-  position: absolute;
-  left: 50%;
-  text-align: center;
-  height: 500px;
-  width: 980px;
-  -webkit-transition: opacity 100ms ease,-webkit-transform 1500ms ease 100ms;
-  transition: opacity 100ms ease,-webkit-transform 1500ms ease 100ms;
-  -webkit-transform: rotateX(65deg) translateZ(-80px) rotateY(-5deg);
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform-origin: center 65%;
-  z-index: 5;
-  opacity: 1;
-  -webkit-transform: rotateX(45deg) rotateY(0deg);
-}
-.container .honeycomb .column {
-  display: block;
-  float: left;
-  width: 64px;
-}
-.container .honeycomb .column:nth-child(odd) {
-  margin: 35.2px 0 0 0;
-}
-.container .honeycomb .hex {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  float: left;
-  margin: 0;
-  position: relative;
-  height: 76.8px;
-  width: 64px;
-  -webkit-transform: translateZ(-88px) scale(0.4);
-  -webkit-transform-style: preserve-3d;
-  text-decoration: none;
-  -webkit-transition: all 210ms ease-out;
-  transition: all 210ms ease-out;
-  -webkit-transition: all 340ms ease-in-out;
-  transition: all 340ms ease-in-out;
-  opacity: 0.5;
-  -webkit-transform: translateZ(0);
-}
-.container .honeycomb .hex:hover {
-  opacity: 1;
-  -webkit-transform: translateZ(20px);
-  -webkit-transition-duration: 120ms;
-  transition-duration: 120ms;
-  -webkit-animation-play-state: paused;
-}
-.container .honeycomb .hex:hover .jitter {
-  -webkit-animation-play-state: paused;
-}
-.container .honeycomb .hex:hover .text {
-  opacity: 1;
-  -webkit-transform: rotateX(-90deg) translateZ(-40px) translateY(-50px);
-}
-.container .honeycomb .hex .wrapper {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.container .honeycomb .hex .wrapper .shape {
-  background: #66BEA2;
-}
-.container .honeycomb .hex .wrapper .shape:before {
-  border-bottom-color: #66BEA2;
-}
-.container .honeycomb .hex .wrapper .shape:after {
-  border-top-color: #66BEA2;
-}
-.container .honeycomb .hex .text {
-  display: block;
-  opacity: 0;
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: -100px;
-  text-align: center;
-  width: 264px;
-  -webkit-transition: all 300ms ease-out 30ms;
-  transition: all 300ms ease-out 30ms;
-  -webkit-transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  -webkit-font-smoothing: antialiased;
-}
-.container .honeycomb .hex .text strong {
-  display: block;
-  font: 600 26px/1.1 verdana,sans-serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #2d2d2d;
-}
-.container .honeycomb .hex .text small {
-  display: block;
-  font: 15px/1.1 verdana,sans-serif;
-  color: #2d2d2d;
-}
-.container .honeycomb .shadows {
-
-  display: block;
-  opacity: 0.88;
-  pointer-events: none;
-  position: absolute;
-  top: -15%;
-  left: -15%;
-  height: 130%;
-  width: 130%;
-  -webkit-transform: translateZ(10px);
-}
-
-.hexagon {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 64px;
-  height: 36.95px;
-  background-color: #ffffff;
-  margin: 0;
-  -webkit-transform: rotateZ(90deg);
-}
-.hexagon:before, .hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 32px solid transparent;
-  border-right: 32px solid transparent;
-  left: 0;
-}
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 18.48px solid #ffffff;
-}
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 18.48px solid #ffffff;
-}
-
 .hidden {
   display: none;
 }
@@ -827,7 +675,7 @@ path#middle {
 
 .tester {
   position: relative;
-height: 450px;
+  height: 450px;
   width: 100%;
   background-color: #2d2d2d;
 }
@@ -843,5 +691,156 @@ height: 450px;
   width: 100%;
 }
 
+.dd {
+  -webkit-animation: 
+    circleGrow 500ms 500ms forwards, 
+    circleScale 950ms 500ms forwards
+  ;
+  background: #2d2d2d;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.3em;
+  height: 0;
+  left: 50%;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  width: 0;
+}
 
+.letter {
+  display: block;
+  height: 10em;
+  left: 0;
+  line-height: 10em;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 10em;
+}
+
+.d {
+  -webkit-animation: dLetter 250ms 1000ms forwards;
+  left: 1.75em;
+}
+
+.v {
+  -webkit-animation: vLetter 250ms 1150ms forwards;
+  left: -1.75em;
+}
+
+.l {
+  -webkit-animation: lLetter 250ms 1300ms forwards;
+  top: 1.65em;
+}
+
+.p {
+  -webkit-animation: pLetter 250ms 1450ms forwards;
+  top: -1.65em;
+  color: #66BEA2;
+}
+
+.line {
+  background: #fff;
+  display: block;
+  height: 6em;
+  left: 50%;
+  margin: -3em 0 0 0;
+  opacity: 1;
+  position: absolute;
+  top: 50%;  
+  width: 0.075em;
+}
+
+.nwse {
+  -webkit-animation: nwse 250ms 1600ms forwards;
+  transform: translate(-7.5em, -7.5em) rotateZ(-45deg);
+}
+
+.nesw {
+  -webkit-animation: nesw 250ms 1850ms forwards;
+  transform: translate(-7.5em, 7.5em) rotateZ(45deg);
+}
+
+.replay {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.2em;
+  color: #fff;
+  display: block;
+  font-size: 0.9em;
+  left: 0.75em;
+  opacity: 0.5;
+  padding: 0.5em 0.75em;
+  position: absolute;  
+  text-decoration: none;
+  transition: 300ms;
+  top: 0.75em;
+}
+  
+.replay:hover, 
+.replay:focus {
+  opacity: 1;   
+}
+
+@-webkit-keyframes circleGrow {
+  to {
+    height: 10em;
+    margin: -5em 0 0 -5em;
+    opacity: 1;
+    width: 10em;
+  }
+}
+
+@-webkit-keyframes circleScale {
+  50% {
+    transform: scale(1.1);
+  },
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes dLetter {
+  to {
+    left: -1.75em;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes vLetter {
+  to {
+    left: 1.75em;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lLetter {
+  to {    
+    opacity: 1;
+    top: -1.65em;
+  }
+}
+
+@-webkit-keyframes pLetter {
+  to {    
+    opacity: 1;
+    top: 1.65em;
+  }
+}
+
+@-webkit-keyframes nesw {
+  to {
+    transform: rotateZ(45deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nwse {
+  to {
+    transform: rotateZ(-45deg);
+    opacity: 1;
+  }
 }

@@ -81,7 +81,18 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row centered">
+
+					<div class="dd">
+					  <span class="letter d">A</span>
+					  <span class="letter v">M</span>
+					  <span class="letter l">J</span>
+					  <span class="letter p"><i class="fa fa-circle"></i></span>
+					  <span class="line nesw"></span>
+					  <span class="line nwse"></span>
+					</div>
+
 				<div class="col-lg-8 col-lg-offset-2">
+			
 				<h1>Using <b>Development</b> and <b>Design</b></h1>
 				<h2>to solve dynamic problems</h2>
 				</div>
@@ -138,14 +149,6 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>FIRST CLASS DESIGN</h4>
 				<p>By being true to the brand I represent, I elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And I see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
-			<p><br/><br/></p>
-			</div>
-
-				<div class="col-lg-8 col-lg-offset-2 heightMe">
-				<h4>DESIGN THAT IS FOCUSED ON YOU</h4>
-				<p>I take the time to make sure the design fits the message you or your company wants to send.</p>
-
-	
 			<p><br/><br/></p>
 			</div>
 			<div class="col-lg-2"></div>
@@ -249,6 +252,31 @@ $(document).on('mousemove', function(e) {
         .css('-o-transform', 'rotate('+rotate+'deg)')
         .css('transform', 'rotate('+rotate+'deg)');
 });
+
+  	</script>
+  	<script>
+(function() {
+  var lines, replay, resetAnimation;
+
+  resetAnimation = function(e) {
+    var clone, elem, i, lines, _results;
+    e.preventDefault();
+    lines = document.querySelectorAll('.dd');
+    i = lines.length;
+    _results = [];
+    while (i--) {
+      elem = lines[i];
+      clone = elem.cloneNode(true);
+      _results.push(elem.parentNode.replaceChild(clone, elem));
+    }
+    return _results;
+  };
+
+  replay = lines = document.querySelector('.replay');
+
+  replay.addEventListener('click', resetAnimation);
+
+}).call(this);
 
   	</script>
 
