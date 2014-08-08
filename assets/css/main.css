@@ -691,12 +691,22 @@ path#middle {
   width: 100%;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(#fff, #bbb);
+  font: 400 100% 'Raleway', sans-serif;
+}
+
 .dd {
   -webkit-animation: 
     circleGrow 500ms 500ms forwards, 
     circleScale 950ms 500ms forwards
   ;
-  background: #2d2d2d;
+  background: #333;
   border-radius: 50%;
   color: #fff;
   font-size: 1.3em;
@@ -708,6 +718,7 @@ path#middle {
   text-decoration: none;
   top: 50%;
   width: 0;
+  z-index: 9999;
 }
 
 .letter {
@@ -740,11 +751,10 @@ path#middle {
 .p {
   -webkit-animation: pLetter 250ms 1450ms forwards;
   top: -1.65em;
-  color: #66BEA2;
 }
 
-.line {
-  background: #fff;
+.liner {
+  background: #66BEA2;
   display: block;
   height: 6em;
   left: 50%;

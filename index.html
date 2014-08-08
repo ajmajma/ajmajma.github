@@ -87,8 +87,8 @@
 					  <span class="letter v">M</span>
 					  <span class="letter l">J</span>
 					  <span class="letter p"><i class="fa fa-circle"></i></span>
-					  <span class="line nesw"></span>
-					  <span class="line nwse"></span>
+					  <span class="liner nesw"></span>
+					  <span class="liner nwse"></span>
 					</div>
 
 				<div class="col-lg-8 col-lg-offset-2">
@@ -252,31 +252,6 @@ $(document).on('mousemove', function(e) {
         .css('-o-transform', 'rotate('+rotate+'deg)')
         .css('transform', 'rotate('+rotate+'deg)');
 });
-
-  	</script>
-  	<script>
-(function() {
-  var lines, replay, resetAnimation;
-
-  resetAnimation = function(e) {
-    var clone, elem, i, lines, _results;
-    e.preventDefault();
-    lines = document.querySelectorAll('.dd');
-    i = lines.length;
-    _results = [];
-    while (i--) {
-      elem = lines[i];
-      clone = elem.cloneNode(true);
-      _results.push(elem.parentNode.replaceChild(clone, elem));
-    }
-    return _results;
-  };
-
-  replay = lines = document.querySelector('.replay');
-
-  replay.addEventListener('click', resetAnimation);
-
-}).call(this);
 
   	</script>
 
