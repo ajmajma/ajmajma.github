@@ -215,7 +215,6 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
-
     <script src="assets/js/fss.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/mesh.js"></script>
@@ -232,16 +231,6 @@
 
 		    }
 		},false); 
-  	</script>
-  	<script>
-  			$(".btn").click(function(event){
-		if($(this).find("b.drop").length == 0) { $(this).prepend("<b class='drop'></b>"); }
-		drop = $(this).find("b.drop").removeClass("animate");
-		x = event.pageX - drop.width()/2 - $(this).offset().left;
-		y = event.pageY - drop.height()/2 - $(this).offset().top;
-		drop.css({top: y+'px', left: x+'px'}).addClass("animate");
-	})
-
   	</script>
   </body>
 </html>

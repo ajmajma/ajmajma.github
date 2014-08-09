@@ -1,13 +1,15 @@
 window.addEventListener("scroll", function() {
     if (window.scrollY > 500) {
         $('.mobile-nav-header').addClass("removeBg");
-       $('.mobile-nav-top').find(".navbar-brand").slideUp();
+        $('.mobile-nav-top').find(".navbar-brand").removeClass("fadeInDown")
+         $('.mobile-nav-top').find(".navbar-brand").addClass("fadeOutUp")
 
 
     }
     else {
         $('.mobile-nav-header').removeClass("removeBg");
-         $('.mobile-nav-top').find(".navbar-brand").slideDown();
+         $('.mobile-nav-top').find(".navbar-brand").addClass("fadeInDown")
+         $('.mobile-nav-top').find(".navbar-brand").removeClass("fadeOutUp")
 
     }
 
@@ -18,7 +20,7 @@ $('.hamburg').on('click touchend', function(e) {
             e.preventDefault();
   
   if($(this).hasClass("cross")){
- $(this).removeClass ("cross");
+    $(this).removeClass ("cross");
     $(".mobile-nav-ul").slideUp();
     $(".shader-bg").removeClass("showFade");
 
