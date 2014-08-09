@@ -768,7 +768,7 @@ body {
   top: -1.65em;
 }
 
-.line {
+.liner {
   background: #fff;
   display: block;
   height: 6em;
@@ -789,6 +789,7 @@ body {
   -webkit-animation: nesw 250ms 1850ms forwards;
   transform: translate(-7.5em, 7.5em) rotateZ(45deg);
 }
+
 
 @-webkit-keyframes circleGrow {
   to {
