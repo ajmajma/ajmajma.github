@@ -18,8 +18,6 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/device.css" rel="stylesheet">
 
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,22 +26,8 @@
     <![endif]-->
   </head>
 
-  <!-- Preloader -->
-<script type="text/javascript">
-    //<![CDATA[
-        $(window).load(function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(350).css({'overflow':'visible'});
-        })
-    //]]>
-</script> 
-
   <body>
-  	<!-- Preloader -->
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
+
     <div class="mobile-nav-top">
       <div class="mobile-nav-header">
         <a class="navbar-brand" href="#">AJM<i class="fa fa-circle"></i></a>
@@ -228,7 +212,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
 
@@ -236,19 +220,27 @@
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/mesh.js"></script>
   	<script>
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 500) {
-       $('.navbar-fixed-top').removeClass("makeNone"); 
-      $('.navbar-fixed-top').addClass("makeSolid"); 
+		window.addEventListener("scroll", function() {
+		    if (window.scrollY > 500) {
+		       $('.navbar-fixed-top').removeClass("makeNone"); 
+		      $('.navbar-fixed-top').addClass("makeSolid"); 
 
-    }
-    else {
-          $('.navbar-fixed-top').addClass("makeNone"); 
-      $('.navbar-fixed-top').removeClass("makeSolid"); 
+		    }
+		    else {
+		          $('.navbar-fixed-top').addClass("makeNone"); 
+		      $('.navbar-fixed-top').removeClass("makeSolid"); 
 
-    }
-},false); 
-
+		    }
+		},false); 
+  	</script>
+  	<script>
+  			$(".btn").click(function(event){
+		if($(this).find("b.drop").length == 0) { $(this).prepend("<b class='drop'></b>"); }
+		drop = $(this).find("b.drop").removeClass("animate");
+		x = event.pageX - drop.width()/2 - $(this).offset().left;
+		y = event.pageY - drop.height()/2 - $(this).offset().top;
+		drop.css({top: y+'px', left: x+'px'}).addClass("animate");
+	})
 
   	</script>
   </body>

@@ -253,6 +253,12 @@ a:after {
 	padding-bottom: 35px;
 }
 
+#blueFix {
+  background: #C8C8A9;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
 #blue h4 {
 	color: white;
 	font-weight: 700;
@@ -769,7 +775,7 @@ body {
 }
 
 .liner {
-  background: #fff;
+  background: #66BEA2;
   display: block;
   height: 6em;
   left: 50%;
@@ -873,3 +879,4 @@ body {
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
+

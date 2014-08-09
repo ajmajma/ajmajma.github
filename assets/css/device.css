@@ -66,8 +66,8 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 #device span:before{
-	font-family: FontAwesome;
-	content: '\f07b';
+	
+	content: '<HTML>';
 	font-size: 16px;
 	color: #66BEA2;
 	text-align: center;
@@ -81,12 +81,6 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 	z-index: 2;
 }
 
-#device span:hover:before {
-	 font-family: FontAwesome;
-	 font-size: 28px;
-   	content: "\f07c";
- 
-}
 
 /* MBPro */
 /* MBPro */
