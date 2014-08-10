@@ -1027,8 +1027,7 @@ body {
 
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+
   }
 }
 
@@ -1042,9 +1041,7 @@ body {
 
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+  
   }
 }
 
