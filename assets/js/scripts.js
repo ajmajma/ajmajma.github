@@ -1,3 +1,5 @@
+
+
 window.addEventListener("scroll", function() {
     if (window.scrollY > 500) {
         $('.mobile-nav-header').addClass("removeBg");

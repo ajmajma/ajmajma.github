@@ -75,7 +75,7 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
+hr {
     display: block;
     height: 1px;
     border: 0;
@@ -83,6 +83,7 @@ a:after {
     margin: 1em 0;
     padding: 0;
 }
+
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
 
@@ -205,26 +206,25 @@ a:after {
   }
 
   .node2 {
-        animation: fadeInDown .7s forward;
-    -moz-animation: fadeInDown .7s forwards; /* Firefox */
-    -webkit-animation: fadeInDown .7s forwards; /* Safari and Chrome */
-    -o-animation: fadeInDown .7s forwards; /* Opera */
+        animation: fadeInDown 1s forward;
+    -moz-animation: fadeInDown 1s forwards; /* Firefox */
+    -webkit-animation: fadeInDown 1s forwards; /* Safari and Chrome */
+    -o-animation: fadeInDown 1s forwards; /* Opera */
   }
   .node3 {
-        animation: fadeInDown .9s forward;
-    -moz-animation: fadeInDown .9s forwards; /* Firefox */
-    -webkit-animation: fadeInDown .9s forwards; /* Safari and Chrome */
-    -o-animation: fadeInDown .9s forwards; /* Opera */
+        animation: fadeInDown 1.5s forward;
+    -moz-animation: fadeInDown 1.5s forwards; /* Firefox */
+    -webkit-animation: fadeInDown 1.5s forwards; /* Safari and Chrome */
+    -o-animation: fadeInDown 1.5s forwards; /* Opera */
 
   }
 
 
   .node4 {
-        animation: fadeInDown 1.1s forward;
-    -moz-animation: fadeInDown 1.1s forwards; /* Firefox */
-    -webkit-animation: fadeInDown 1.1s forwards; /* Safari and Chrome */
-    -o-animation: fadeInDown 1.1s forwards; /* Opera */
-
+        animation: fadeInDown 2s forward;
+    -moz-animation: fadeInDown 2s forwards; /* Firefox */
+    -webkit-animation: fadeInDown 2s forwards; /* Safari and Chrome */
+    -o-animation: fadeInDown 2s forwards; /* Opera */
   }
 
 
@@ -1050,6 +1050,26 @@ body {
    -webkit-animation: fadeInDown 1s;
 }
 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
 
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
 
 
