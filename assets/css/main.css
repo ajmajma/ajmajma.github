@@ -265,6 +265,7 @@ a:after {
 	font-size: 70px;
 	font-weight: 300;
   margin: 0;
+  opacity: 1;
 	letter-spacing: 3px;
     z-index: 9999;
     animation: fadeInDown 3s forward;
@@ -280,6 +281,7 @@ a:after {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+  opacity: 1;
      z-index: 9999;
     animation: fadeInDown 4s forwards;
     -moz-animation: fadeInDown 4s forwards; /* Firefox */
