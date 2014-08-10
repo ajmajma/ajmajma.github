@@ -191,6 +191,7 @@ a:after {
     background: none;
     color:  #888;
 
+
   }
   .node1 {    
     animation: fadeInDown .5s forward;
@@ -432,6 +433,40 @@ a:after {
 .modal-footer {
 	background: #f2f2f2;
 	margin-top: 0px; 
+}
+
+.circ1 {
+
+    height:350px;
+    width:350px;
+    background: rgba(200,200,200, 0.15);
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+margin: -270px 0px 0 -43px;
+}
+.circ2 {
+height:350px;
+    width:350px;
+    background: rgba(200,200,200, 0.15);
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+margin: -270px 0px 0 -43px;
+}
+.circ3 {
+height:350px;
+    width:350px;
+    background: rgba(200,200,200, 0.15);
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+  margin: -270px 0px 0 -43px;
+}
+.circ4 {
+height:350px;
+    width:350px;
+    background: rgba(200,200,200, 0.15);
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+ margin: -270px 0px 0 -43px;
 }
 
 /* ==========================================================================
