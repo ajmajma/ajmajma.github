@@ -19,22 +19,9 @@
     <link href="assets/css/device.css" rel="stylesheet">
 
     <!--- preloader & jquery ---->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/jquery.queryloader2.js" type="text/javascript"></script>
 
-    <script>
 
-	$(document).ready(function(){
 
-		$("body").queryLoader2({barColor:"#66BEA2",backgroundColor:"#1d1d1d",percentage:true,barHeight:20,completeAnimation:"grow"});
-
-	});
-
-	window.addEventListener('DOMContentLoaded', function() {
-    $("body").queryLoader2({barColor:"#66BEA2",backgroundColor:"#1d1d1d",percentage:true,barHeight:20,completeAnimation:"grow"});
-	});
-
-	</script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -44,7 +31,9 @@
 
   <body>
   	<!-- Preloader -->
-
+  	<div class="page-loader">
+        <b></b>
+    </div>
   	<!-- Preloader -->
 
     <div class="mobile-nav-top">
@@ -235,8 +224,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
+	<!-- other scripts -->
     <script src="assets/js/fss.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/mesh.js"></script>
