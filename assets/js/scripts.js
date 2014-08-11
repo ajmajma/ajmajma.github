@@ -1,4 +1,4 @@
- // Page loader
+    // Loader
     //---------------------------------------------
     
     $(window).load(function(){
