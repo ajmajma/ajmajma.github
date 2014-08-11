@@ -13,6 +13,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 /* OVERALL ASPECT */
 
@@ -82,6 +83,13 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+.cursive {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: #66BEA2;
+
 }
 
 /*preloader*/
@@ -295,6 +303,8 @@ hr {
 	font-weight: 300;
   margin: 0;
 	letter-spacing: 3px;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
     animation: fadeInDown 3s forwards;
     -moz-animation: fadeInDown 3s forwards; /* Firefox */
     -webkit-animation: fadeInDown 3s forwards; /* Safari and Chrome */
@@ -308,7 +318,8 @@ hr {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-  
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
     animation: fadeInDown 4s forwards;
     -moz-animation: fadeInDown 4s forwards; /* Firefox */
     -webkit-animation: fadeInDown 4s forwards; /* Safari and Chrome */
