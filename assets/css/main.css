@@ -427,6 +427,26 @@ hr {
 	font-weight: 700;
 }
 
+.bg2 {
+  background: url(../img/process-bg.jpg) no-repeat center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.bg2 p {
+  color: #fff;
+
+}
+
+.bg2 h4 {
+  color: #fff;
+  font-size: 28px;
+
+}
+.bg2 .col-lg-3 {
+background-color: rgba(0, 0, 0, 0.27);
+
+}
 .desc {
 	padding-top: 35px;
 }
@@ -467,40 +487,6 @@ hr {
 .modal-footer {
 	background: #f2f2f2;
 	margin-top: 0px; 
-}
-
-.circ1 {
-
-    height:350px;
-    width:350px;
-    background: rgba(200,200,200, 0.15);
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-margin: -270px 0px 0 -43px;
-}
-.circ2 {
-height:350px;
-    width:350px;
-    background: rgba(200,200,200, 0.15);
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-margin: -270px 0px 0 -43px;
-}
-.circ3 {
-height:350px;
-    width:350px;
-    background: rgba(200,200,200, 0.15);
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-  margin: -270px 0px 0 -43px;
-}
-.circ4 {
-height:350px;
-    width:350px;
-    background: rgba(200,200,200, 0.15);
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
- margin: -270px 0px 0 -43px;
 }
 
 /* ==========================================================================
