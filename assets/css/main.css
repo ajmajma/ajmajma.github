@@ -442,6 +442,9 @@ hr {
   background: url(../img/process-bg.jpg) no-repeat center;
   background-attachment: scroll;
   background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 750px;
 }
 
 .bg2 p {
@@ -1197,4 +1200,52 @@ body {
   }
 }
 
+.greenMe {
+  background-color: #2d2d2d
+}
 
+.processFour {
+  transition: 1.5s all;
+  display: block;
+  width: 25%;
+  height: 750px; 
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 205px;
+  padding-bottom: 2%;
+  text-align: center;
+  cursor: pointer;
+}
+.processFour p {
+  font-size: 16px;
+
+}
+.processFour:hover {
+  background-color: rgba(102, 190, 162, 0.8);
+
+
+}
+.processFour i {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  padding-bottom: 10px;
+
+}
+.darkenFour {
+  background-color: rgba(0,0,0, 0.25);
+}
+
+.centerFour{
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-bottom: 0 !important;
+
+}
