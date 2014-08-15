@@ -128,9 +128,12 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 .mobile-nav-top{
-	display: none;
+	visibility: hidden;
 }
 
+.shader-bg{
+	visibility: hidden;
+}
 /* -- Wide Screen -- */
 @media only screen and (min-width: 1400px){
 
@@ -187,7 +190,10 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 .mobile-nav-top{
-	display: none;
+	visibility: hidden;
+}
+.shader-bg{
+	visibility: hidden;
 }
 } /* -- End Wide -- */
 
@@ -219,11 +225,14 @@ display: none;
 }
 
 .mobile-nav-top{
-	display: block;
+	visibility: visible;
 }
 .navbar-fixed-top {
-	display: none;
+	visibility: visible;
 
+}
+.shader-bg{
+		display: block;
 }
 
 #headerwrap h1 {
@@ -315,15 +324,17 @@ display: none;
 	
 }
 
-	.mobile-nav-top{
-	display: block;
+.mobile-nav-top{
+visibility: visible;
 }
 
 .navbar-fixed-top {
 	display: none;
 
 }
-
+.shader-bg{
+		visibility: visible;
+}
 #headerwrap h1 {
 	font-size: 40px;
 }
