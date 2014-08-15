@@ -128,11 +128,11 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 .mobile-nav-top{
-	visibility: hidden;
+	display: none;
 }
 
 .shader-bg{
-	visibility: hidden;
+		display: none;
 }
 /* -- Wide Screen -- */
 @media only screen and (min-width: 1400px){
@@ -190,10 +190,10 @@ body { background: #f4f4f0; font: 100%/1.618 'Lato', sans-serif; font-weight: 40
 }
 
 .mobile-nav-top{
-	visibility: hidden;
+	display: none;
 }
 .shader-bg{
-	visibility: hidden;
+		display: none;
 }
 } /* -- End Wide -- */
 
@@ -225,10 +225,10 @@ display: none;
 }
 
 .mobile-nav-top{
-	visibility: visible;
+	display: block;
 }
 .navbar-fixed-top {
-	visibility: visible;
+	display: none;
 
 }
 .shader-bg{
@@ -324,8 +324,8 @@ display: none;
 	
 }
 
-.mobile-nav-top{
-visibility: visible;
+	.mobile-nav-top{
+	display: block;
 }
 
 .navbar-fixed-top {
@@ -333,7 +333,7 @@ visibility: visible;
 
 }
 .shader-bg{
-		visibility: visible;
+		display: block;
 }
 #headerwrap h1 {
 	font-size: 40px;
