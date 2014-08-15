@@ -13,16 +13,17 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300|Open+Sans+Condensed:300);
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,400italic);
+
 
 /* OVERALL ASPECT */
 
 body {
   background-color: #f2f2f2;
-   font-family: 'Lato', sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
-
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 
@@ -30,15 +31,15 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     color: #333;
 }
 
 
 /* Paragraph & Typographic */
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
     line-height: 28px;
     margin-bottom: 25px;
     font-size: 14px;
@@ -1206,7 +1207,10 @@ body {
 }
 
 .processFour {
-  transition: 1.5s all;
+    -moz-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
   display: block;
   width: 25%;
   height: 750px; 
@@ -1234,9 +1238,7 @@ body {
   padding-bottom: 10px;
 
 }
-.darkenFour {
-  background-color: rgba(0,0,0, 0.25);
-}
+
 
 .centerFour{
   width: 100%;
@@ -1249,4 +1251,19 @@ body {
   overflow: hidden;
   padding-bottom: 0 !important;
 
+}
+
+
+#dir{
+    background-color: #000;
+    width: 100%;
+
+    height: 200px;
+    font-family:"Times New Roman";
+    font-size:12px;
+    font-weight:bold;
+    min-width:100px;
+    text-align:center;
+
+    opacity:0.5;
 }
