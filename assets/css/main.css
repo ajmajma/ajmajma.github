@@ -1311,3 +1311,21 @@ body {
 
     opacity:0.5;
 }
+
+.techBg {
+  background: url(../img/bg3.png) no-repeat center;
+  background-attachment: scroll;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 70px 10px;
+}
+
+.techBg h4 {
+  color: #fff;
+
+}
+.bg3Wrap{
+background-color: #66BEA2;
+
+}
