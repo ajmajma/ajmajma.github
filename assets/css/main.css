@@ -1326,6 +1326,8 @@ body {
 
 }
 .bg3Wrap{
-background-color: #66BEA2;
+  background: url(../img/bgmid1.png) no-repeat top center;
+  background-attachment: scroll;
+  background-size: cover;
 
 }
