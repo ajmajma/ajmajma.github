@@ -43,3 +43,7 @@ $('.hamburg').on('click touchend', function(e) {
   
 
 });
+
+//-- css animation delays 
+
+

@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -72,8 +73,8 @@
 	<div id="headerwrap">
 		
 		<div class="h-text">
-				<h1>Using <b>Development</b> and <b>Design</b></h1>
-				<h2>to create <b>awesome</b> web experiences</h2>
+				<h1 class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1s">Using <b>Development</b> and <b>Design</b></h1>
+				<h2 class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="2s">to create <b>awesome</b> web experiences</h2>
 			</div>
 
 	</div><!-- headerwrap -->
@@ -83,8 +84,7 @@
     
         <div class="newnav-navbar">
           <ul class="nav">
-            <li class="active node1"><a href="index.html">ABOUT</a></li>
-            <li class="node2"><a href="about.html">SERVICES</a></li>
+
             <li style="width:120px;height:1px;"> 
             	<div class="dd">
 				  <span class="letter d">A</span>
@@ -95,8 +95,6 @@
 				  <span class="liner nwse"></span>
 				</div>
              </li>
-            <li class="node3"><a href="services.html">WORK</a></li>
-            <li class="node4"><a href="works.html">CONTACT</a></li>
           </ul>
         </div>
     
@@ -106,8 +104,8 @@
 	<div class="bg3Wrap">
 	<div class="container w">
 		<div class="row centered">
-			<h3><b>Hello, I'm Alex</b> </h3>
-			<h3 class="tier3">I'm a UI/UX Front end developer with a passion for creating immersive visual experiences. I design and develop web creations optimised for all devices.</h3>
+			<h3 class="wow fadeInDown" data-wow-duration="1.5s"><b>Hello, I'm Alex</b> </h3>
+			<h3 class="tier3 wow fadeInDown" data-wow-duration="2s">I'm a UI/UX Front end developer with a passion for creating immersive visual experiences. I design and develop web creations optimised for all devices.</h3>
 		
 		</div><!-- row -->
 		<br>
@@ -118,9 +116,9 @@
 	<div class="bg2">
 
 		
-			<div class="processFour">
+			<div class="processFour wow fadeInLeft" data-wow-duration="2s">
 				<div class="centerCheck">
-				<div class="centerFour">
+				<div class="centerFour" >
 						<i class="fa fa-lightbulb-o"></i>
 						<p>By taking time to understand your business I am able to form a realistic calcuated approach to designing and building your product holistically. A website or App should be an investment, and I want to make sure it is tailored to your exact requirements.</p>
 						<h4>IDEA</h4>
@@ -128,7 +126,7 @@
 				</div>
 			</div>
 			</div><!-- col-lg-4 -->
-			<div class="processFour">
+			<div class="processFour wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
 					<div class="centerCheck">
 				<div class="centerFour">
 						<i class="fa fa-desktop"></i>
@@ -139,9 +137,9 @@
 			</div>
 			</div><!-- col-lg-4 -->
 
-			<div class="processFour">
+			<div class="processFour wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s">
 					<div class="centerCheck">
-				<div class="centerFour">
+				<div class="centerFour" >
 						<i class="fa fa-file-code-o"></i>
 						<p>I code and develop your site using powerful technology and advanced backend management software. I turn our designs into a functioning website, and program the various functionalities that make your website come to life. I use various platforms, depending on what will suit your needs best.</p>
 						<h4>DEVELOPMENT</h4>
@@ -150,7 +148,7 @@
 			</div>
 			</div><!-- col-lg-4 -->
 
-				<div class="processFour">
+				<div class="processFour wow fadeInLeft" data-wow-duration="2s" data-wow-delay="3s">
 						<div class="centerCheck">
 					<div class="centerFour">
 						<i class="fa fa-rocket"></i>
@@ -167,7 +165,7 @@
 		<div class="row centered">
 			<br><br>
 			<div class="center-block">
-				<img class="img-circle" src="assets/img/photo1.png" width="220" height="220" alt="">
+				<img class="img-circle wow zoomIn" data-wow-duration="1.5s" src="assets/img/photo1.png" width="220" height="220" alt="">
 				<h4>Alex Moser</h4>
 				<p>Designer. Developer. Lover of all things digital. Passions for everything new and exciting in the web and design world. I currently work as a front-end enterprise level developer, building web apps.  I enjoy keeping up with the fast paced web-world and everthing it has to offer</p>
 
@@ -339,6 +337,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
 	<!-- other scripts -->
+	<script src="assets/js/wow.min.js"></script>
     <script src="assets/js/fss.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/mesh.js"></script>
@@ -357,6 +356,14 @@
 		    }
 		},false); 
 		/*global  window,document,setInterval */
+</script>
+<script>
+		 var wow = new WOW(
+		  {
+		    mobile:false, 
+		  }
+		);
+		 new WOW().init();
 
 
   	</script>
